@@ -3,6 +3,7 @@
 
 	<head>
 		<title>Design for WWW</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link herf="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css'" rel="stylesheet">
 		<link href="styles/home.css" rel="stylesheet">
 	</head>
@@ -10,20 +11,34 @@
 	<style>
 	a:link    {color: #5D1A18; background-color:transparent; text-decoration:none}
 	a:visited {color:#763230; background-color:transparent; text-decoration:none}
-	a:hover   {color:#FFF1B8; background-color:transparent; text-decoration:underline}
+	a:hover   {color:#FFF1B8; background-color:transparent; text-decoration:none}
 	a:active  {color:#958851; background-color:transparent; text-decoration:underline}
 	</style>
 
-	<body>
-		<h1>Welcome, friends.</h1>
-		<h2>Don't drink the koolaid.<h2>
-		<br><br>
-		<h4>Blog Links</h4>
-	    <h3><a href="blog1.html">September 8th</a></h3>
-			<h3><a href="blog2.html">September 15th</a></h3>
-			<h3><a href="blog3.html">September 22th</a></h3>
-		<h4>Project Links</h4>
-			<h3><a href="project1.html">Research</a></h3>
+<body>
+	<div class="Masthead">
+		<div class="container">
+			<h1 id="welcome">Welcome</h1>
+				<ul class="nav bar fit" id="primary-nav">
+					<li><h2><a href="index.html">Home</a></h2></li>
+					<li><h2><a href="blogs.html">Blogs</a><h2></li>
+					<li><h2><a href="project1.html">Project One</a></h2></li>
+				</ul>
+		</div>
+	</div>
+	<main class="page" role="main">
+		<div class="container clear">
+			<div class="main-content">
+				<img src="images/rock.png">
+			</div>
+			<div class="sub-content">
+				<h2>Towson University Fall 2015</h2>
+				<p> Design for WWW</p>
+			</div>
+			<div class="third-content">
+				<h2>Another sidebar</h2>
+		</div>
+	</main>
 </body>
 
 </html>
