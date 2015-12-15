@@ -42,10 +42,11 @@ h3 {
   font-family: inherit;
   font-weight: bold;
   font-style: inherit;
-  font-size: 27px;
-  line-height: 27px;
-  margin-top: 27px;
+  font-size: 20px;
+  line-height: 22px;
+  margin-top: 22px;
   margin-bottom: 0px;
+  color: black;
 }
 
 
@@ -74,7 +75,7 @@ h3 {
 
 .l-home .site-masthead{
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   top: 0;
   left: 0;
   width: 100%;
@@ -86,23 +87,28 @@ h3 {
   z-index: 20;
   /*background: #fff;*/
   padding: 5px;
+
 }
 
 .site-masthead__menu{
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  max-height: 0;
+  overflow: hidden;
   z-index: 1;
   background: #000;
-  transition: all .3s ease-out;
+  transition: all 0s ease-out;
   opacity: 0;
 }
 
 .show-nav .site-masthead__menu{
   opacity: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 100%;
   z-index: 10;
+  transition-duration: 0.3s;
 }
 
 .site-masthead__primary{
@@ -114,77 +120,84 @@ h3 {
 
 .site-content{
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
-.l-home .site-content{
+.l-home .site-content {
+  height: 100%;
+}
+
+.full-hero{
   position: relative;
   z-index: 1;
-  height:100%;
-  background: url('../images/Final-19.jpg') center center no-repeat;
-  background-position: center center;
-  background-repeat: no-repeat;
+  height:90%;
+  background: url('side.jpg') center center no-repeat;
   background-size: cover;
 }
 
-/* Basic background image styling. */
-/*.background-image {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}*/
-
-/* Styles for the alternating / transition effect. */
-/*.toggle-image {
- 	position: absolute;
-  z-index: 2;
-	width: 100%;
-	top: 0;
-	left: 0;
- 	height: 100%;
-	transition: opacity 1s ease-in-out;
-}*/
-
-/* Styles for the specific images. */
-/*.first-image {
-	background-image: url('http://s169923.gridserver.com/images/dtlarooftop.jpg');
-	z-index: -3;
-	opacity: 0;
-}
-
-.second-image {
-	background-image: url('http://s169923.gridserver.com/images/winterbarrel.jpg');
-	z-index: -2;
-	opacity: 0;
-}
-
-.third-image {
-	background-image: url('http://s169923.gridserver.com/images/catalinaharbor.jpg');
-	z-index: -1;
-	opacity: 0;
-}
-
-.first-image.show {
-	opacity: 1;
-}
-
-.second-image.show {
-	opacity: 1;
-}
-
-.third-image.show {
-	opacity: 1;
-}*/
-
-
-.l-home .site-content:after{
+.full-hero:after{
   content: '';
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.full-hero__content {
+  position:absolute;
+  bottom: 10vh;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.knockout{
+  display: inline-block;
+  padding: .5em;
+  font-size: 36px;
+  color: #fff;
+  background-color: rgba(200, 175, 10, .8);
+}
+
+.featured-list__item{
+  overflow: hidden;
+}
+
+.featured-list__item,
+.featured-item__link{
+  position: relative;
+}
+
+.featured-item__link{
+  display: block;
+  padding:200px 0;
+}
+.featured-item__link:link,
+.featured-item__link:active,
+.featured-item__link:visited {
+  color: #fff;
+}
+
+.featured-item__link:hover,
+.featured-item__link:focus{
+  color: red;
+}
+
+.featured-item__body{
+  position: relative;
+  z-index: 10;
+  background-color: transparent;
+}
+
+.featured-item__img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
 }
 
 .img {

@@ -117,7 +117,7 @@
     <!-- Modernizr detects a browsers different capabilities -->
     <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
-  <body class="l-post-detail">
+  <body class="l-posts">
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -125,30 +125,32 @@
     <!-- Add your site or application content here -->
     <header class="site-masthead" role="banner">
     <div class="container">
-      <h1 class="site-masthead__logo">Ayana Owens</h1>
+      <h1 class="site-masthead__logo"><a class="home" href="../index.html">
+        Ayana Owens</a></h1>
       <button class="site-masthead__toggle" id="js-toggle">Menu</button>
       <nav class="site-masthead__menu" role="navigation">
         <strong class="visuallyhidden">Primary Navigation</strong>
         <ul class="site-masthead__primary nav" role="menubar">
+
           <li class="primary__item">
-						<a class="primary__link" href="../art/index.html">
-							Art
-						</a>
-					</li>
-					<li class="primary__item">
-						<a class="primary__link" href="../posts/index.html">
-							Posts
-						</a>
-					</li>
-					<li class="primary__item">
-						<a class="primary__link" href="../projects/index.html">
-							Projects
-						</a>
-					</li>
-					<li class="primary__item">
-						<a class="primary__link" href="../posts/index.html">
-							About
-						</a>
+            <a class="primary__link" href="../art/index.html">
+              Portfolio
+            </a>
+          </li>
+          <li class="primary__item">
+            <a class="primary__link" href="../posts/index.html">
+              Posts
+            </a>
+          </li>
+          <li class="primary__item">
+            <a class="primary__link" href="../projects/index.html">
+              Projects
+            </a>
+          </li>
+          <li class="primary__item">
+            <a class="primary__link" href="../posts/index.html">
+              About
+            </a>
           </li>
           </ul>
       </nav>
@@ -156,29 +158,24 @@
     </header>
 
     <div class="site-content">
-      <article class="entry">
-        <header class="entry__header">
-          <div class="container">
-            <h1 class="entry__heading">
-                Blog Six
-            </h1>
-            <p class="entry__intro">
-              	<a href="http://theneverendingstories.com/">The Never Ending Stories</a></p>
-            </p>
-          </div>
-        </header>
-        <div class="entry__content">
-          <div class="container">
-						<p>This website is another interactive website that displays inspirational news in a display similar to atoms sitting together. As you close into the little dots they resemble something similar to rocks (or comets). The reason for chosing this webpage was because of how it the interaction displays the information and keeps it almost a surprise as to which you get to click on.</p>
-					</div>
-        <!-- end container -->
-        <picture class="entry__full-src">
-          <source srcset="../images/dreams.png 2x" media="(min-width: 768)">
-          <img srcset="../images/dreams.png, ../images/dreams.png 2x">
-
-        </picture>
+      <div class="container">
+      <ul class="grid-list">
+        <li class="grid-list__item">
+          <a class="block-overlay" href="../projects/project1.html">
+            <img class="block-overlay__src" src="../images/lamoulade.png" alt="">
+            <h3 class="block-overlay__content">Towson Galleries</h3>
+          </a>
+        </li>
+        <li class="grid-list__item">
+          <a class="block-overlay" href="../projects/project2.html">
+            <img class="block-overlay__src" src="../images/dadaab.png" alt="">
+            <h3 class="block-overlay__content">Cunningham's</h3>
+          </a>
+        </li>
+        <li class="grid-list__placeholder"></li>
+        <li class="grid-list__placeholder"></li>
+      </ul>
       </div>
-      </article>
     </div>
 
 
